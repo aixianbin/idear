@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - sugar">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="sugar">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="test"/>
+    <table id="6" parent="1" name="administrators"/>
+    <table id="7" parent="1" name="article"/>
+    <table id="8" parent="1" name="comment"/>
+    <table id="9" parent="1" name="interestcircle"/>
+    <table id="10" parent="1" name="menu"/>
+    <table id="11" parent="1" name="user"/>
+    <table id="12" parent="1" name="user_collection"/>
+    <table id="13" parent="1" name="user_follow"/>
+    <table id="14" parent="1" name="user_interestcircle"/>
+    <table id="15" parent="1" name="picture"/>
+    <table id="16" parent="1" name="article_picture"/>
+    <column id="17" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="18" parent="6" name="username">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="19" parent="6" name="password">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="20" parent="6" name="salt">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="21" parent="6" name="time">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="22" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="23" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="24" parent="7" name="tital">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="25" parent="7" name="content">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="26" parent="7" name="createTime">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="27" parent="7" name="viewNum">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="28" parent="7" name="likeNum">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="29" parent="7" name="forwardNum">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="30" parent="7" name="songId">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="31" parent="7" name="userId">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="32" parent="7" name="status">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="33" parent="7" name="time">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="34" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="35" parent="8" name="id">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="36" parent="8" name="contentid">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="37" parent="8" name="userId">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="38" parent="8" name="level">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="39" parent="8" name="time">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="40" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="41" parent="9" name="tital">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="42" parent="9" name="introduce">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="43" parent="9" name="hot">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="44" parent="9" name="createTime">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="45" parent="9" name="imgId">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <key id="46" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="47" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="48" parent="10" name="name">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="49" parent="10" name="pid">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="50" parent="10" name="iconCls">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="51" parent="10" name="href">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="52" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="53" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="54" parent="11" name="name">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="55" parent="11" name="sex">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="56" parent="11" name="mobile">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="57" parent="11" name="password">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="58" parent="11" name="imgurl">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="59" parent="11" name="status">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="60" parent="11" name="time">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="61" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="62" parent="12" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="63" parent="12" name="articleId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="64" parent="12" name="time">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="65" parent="12" name="flag">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <key id="66" parent="12" name="PRIMARY">
+      <columns>userId
+articleId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="67" parent="13" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="68" parent="13" name="followId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="69" parent="13" name="flag">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="70" parent="13" name="creatTime">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="71" parent="13" name="PRIMARY">
+      <columns>userId
+followId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="72" parent="14" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="73" parent="14" name="interestcircleId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <key id="74" parent="14" name="PRIMARY">
+      <columns>userId
+interestcircleId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="75" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="76" parent="15" name="imgName">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="77" parent="15" name="type">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="78" parent="15" name="path">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="79" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="80" parent="16" name="articleId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="81" parent="16" name="imgId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <key id="82" parent="16" name="PRIMARY">
+      <columns>articleId
+imgId</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
